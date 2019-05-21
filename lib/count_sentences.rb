@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!](\s+[A-Z])|(\w|\W)[.?!]\z/)
+    self.scan(/[.?!]\s+[A-Z]|\w[.?!][\s\z.?!]/).count
   end
 end

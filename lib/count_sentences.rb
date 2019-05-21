@@ -4,7 +4,6 @@ class String
 
   def sentence?
     true if self[-1] == "."
-    end
   end
 
   def question?
